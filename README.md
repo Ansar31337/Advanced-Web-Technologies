@@ -12,8 +12,8 @@ The repository is organized into directories corresponding to specific lab tasks
 ### 🧪 Laboratory Tasks
 | Task | Description | Technology Stack | Link |
 | :--- | :--- | :--- | :--- |
-| **Lab Task 01** | Course Management API | NestJS, TypeScript | [View Task](./Lab/lab-task-1/course-management-api) |
-| **Lab Task 02** | Input Validation, DTOs & File Upload | NestJS, TypeScript | [View Task](./Lab/lab-task-2/course-management-api) |
+| **Lab Task 01** | Course Management API | NestJS, TypeScript | [View Task](./Lab/lab-task-1/CourseManagementAPI) |
+| **Lab Task 02** | Input Validation, DTOs & File Upload | NestJS, TypeScript | [View Task](./Lab/lab-task-2/CourseManagementAPI) |
 | **Lab Task 03** | (Upcoming) | TBD | - |
 
 ---
