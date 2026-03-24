@@ -59,6 +59,23 @@ UniversitySystemAPI/
 | POST | `/notification/send` | Send a direct notification |
 | POST | `/notification/check` | Check enrollment and notify |
 
+## Requirements & Steps
+
+### Step 1: Create a New Project
+Scaffolded the project and modules using Nest CLI.
+
+### Step 2: Expected Project Structure
+Organized the project into `course`, `enrollment`, and `notification` directories.
+
+### Step 3: Part A — Intra-Module Dependency Injection
+Implemented `CourseService` and `CourseController` within `CourseModule`.
+
+### Step 4: Part B — Inter-Module Dependency Injection
+Exported `CourseService` from `CourseModule` and imported it into `EnrollmentModule`.
+
+### Step 5: Part C — Circular Dependency
+Resolved circular dependency between `EnrollmentModule` and `NotificationModule` using `forwardRef()`.
+
 ## Getting Started
 
 ### Installation
