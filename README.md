@@ -15,7 +15,7 @@ The repository is organized into directories corresponding to specific lab tasks
 | **Lab Task 01** | Course Management API | NestJS, TypeScript | [View Task](./Lab/lab-task-1/CourseManagementAPI) |
 | **Lab Task 02** | Input Validation, DTOs & File Upload | NestJS, TypeScript | [View Task](./Lab/lab-task-2/CourseManagementAPI) |
 | **Lab Task 03** | Dependency Injection (Intra, Inter, Circular) | NestJS, TypeScript | [View Task](./Lab/lab-task-3/UniversitySystemAPI) |
-| **Lab Task 04** | (Upcoming) | TBD | - |
+| **Lab Task 04** | Product Inventory API (Single Entity CRUD) | NestJS, TypeORM, PostgreSQL | [View Task](./Lab/lab-task-4/product-inventory-api) |
 
 ---
 
