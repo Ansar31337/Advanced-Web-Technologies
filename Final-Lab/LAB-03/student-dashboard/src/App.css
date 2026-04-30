@@ -1,5 +1,4 @@
 :root {
-  /* Light Theme */
   --primary-color: #2563eb;
   --bg-color: #f8fafc;
   --card-bg: #ffffff;
@@ -254,7 +253,6 @@ body {
   font-weight: 700;
 }
 
-/* Form Styling */
 .form-section {
   background: var(--card-bg);
   padding: 2rem;
