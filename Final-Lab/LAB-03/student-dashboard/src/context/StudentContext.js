@@ -6,7 +6,7 @@ const initialData = [
   {
     name: 'Bruce Wayne',
     id: 'UG02-43-18-001',
-    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Bruce',
+    avatar: 'https://img.icons8.com/color/96/batman.png',
     gpa: 3.92,
     major: 'Computer Science',
     courses: [
