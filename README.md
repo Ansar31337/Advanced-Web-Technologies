@@ -17,13 +17,12 @@ The repository is organized into directories corresponding to specific lab tasks
 | **Lab Task 03** | Dependency Injection (Intra, Inter, Circular) | NestJS, TypeScript | [View Task](./Lab/lab-task-3/UniversitySystemAPI) |
 | **Lab Task 04** | Product Inventory API (Single Entity CRUD) | NestJS, TypeORM, PostgreSQL | [View Task](./Lab/lab-task-4/product-inventory-api) |
 
-### 🎓 Final Laboratory Series (React)
+### 🎓 Final Laboratory Task (React)
 | Project | Description | Technology Stack | Link |
 | :--- | :--- | :--- | :--- |
-| **Final Lab Series** | Student Dashboard Application | React, Hooks, Context API | [View Series](./Final-Lab) |
-| ↳ **LAB-01** | Foundation UI & Components | React, Props, CSS Modules | [View Task](./Final-Lab/LAB-01/student-dashboard) |
-| ↳ **LAB-02** | State, Effects & Interactivity | React, Hooks (useState, useEffect) | [View Task](./Final-Lab/LAB-02/student-dashboard) |
-| ↳ **LAB-03** | Global State & Form Validation | React, Context API, Forms | [View Task](./Final-Lab/LAB-03/student-dashboard) |
+| **LAB-01** | Foundation UI & Components | React, Props, CSS Modules | [View Task](./Final-Lab/LAB-01/student-dashboard) |
+| **LAB-02** | State, Effects & Interactivity | React, Hooks (useState, useEffect) | [View Task](./Final-Lab/LAB-02/student-dashboard) |
+| **LAB-03** | Global State & Form Validation | React, Context API, Forms | [View Task](./Final-Lab/LAB-03/student-dashboard) |
 
 ---
 

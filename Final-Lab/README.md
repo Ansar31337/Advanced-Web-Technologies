@@ -1,8 +1,8 @@
-# Final Laboratory Series: Student Dashboard Application
-## Practical React Development · Lab 1 → Lab 2 → Lab 3
+# Final Laboratory Task: Student Dashboard Application
+## Practical React Development · LAB-01 → LAB-02 → LAB-03
 
 ## 📋 Overview
-The **Final Laboratory Series** is a progressive three-part project focused on building a comprehensive **Student Dashboard** from the ground up using modern React. Each lab extends the functionality of the previous one, evolving from a static UI shell to a dynamic, interactive application with global state management and persistent data.
+The **Final Laboratory Task** is a comprehensive three-part project focused on building a modular **Student Dashboard** from the ground up using modern React. The project progresses from a static UI shell to a dynamic, interactive application with global state management and persistent data, demonstrating key architectural patterns in React development.
 
 ## 📂 Series Structure
 
@@ -57,4 +57,4 @@ The **Final Laboratory Series** is a progressive three-part project focused on b
 - Persisting application state for a seamless user experience.
 
 ---
-*This series was completed as the final assessment for the Advanced Web Technologies (CSC 4161) course.*
+*This task was completed as the final assessment for the Advanced Web Technologies (CSC 4161) course.*

@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# LAB 02: State Management, Side Effects & Interactivity
+## Student Dashboard — Dynamic Data & Lifecycle Methods
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+Building upon the foundation established in **LAB-01**, this laboratory task introduces state management and side-effect handling in React. The static dashboard is transformed into an interactive application capable of simulating API data fetching, real-time searching, and complex data sorting.
 
-## Available Scripts
+## Objective
+The primary objective is to implement interactive features using the `useState` hook for local state and the `useEffect` hook for managing component lifecycles and side effects. Students learn how to lift state to share data between components and handle dynamic UI updates based on user interaction.
 
-In the project directory, you can run:
+## Topics Covered
+- **useState Hook:** Managing local component state for interactivity.
+- **useEffect Hook:** Handling side effects, simulating asynchronous API calls, and updating the browser environment.
+- **State Lifting:** Coordinating data between sibling components via a common parent.
+- **Dynamic Filtering & Sorting:** Implementing real-time search logic and multi-criteria sorting.
 
-### `npm start`
+## Implementation Tasks
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. Simulated API Integration
+- Replaced hardcoded static data with dynamic state initialized via `useState`.
+- Simulated an asynchronous API fetch within `useEffect` using `setTimeout`.
+- Implemented a **Loading Spinner** UI that displays during the 1.5-second data retrieval simulation.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 2. Real-time Search Functionality
+- Developed a new reusable `SearchBar` component.
+- Implemented live-search logic that filters the student list as the user types, matching against either the student's **Name** or **Major**.
 
-### `npm test`
+### 3. Favorite System & State Lifting
+- Integrated a **Favorite** toggle button within each `StudentCard`.
+- Utilized state lifting to track the total number of favorite students globally.
+- Displayed the real-time favorites count within the `DashboardHeader`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 4. Dynamic Document Metadata
+- Configured a `useEffect` hook to synchronize the browser tab title (`document.title`) with the current application state.
+- The title dynamically reflects the number of students currently visible after applying search filters.
 
-### `npm run build`
+### 5. Advanced Sorting Controls
+- Created a `SortControls` reusable component featuring buttons for:
+  - **Name (A–Z):** Alphabetical ordering.
+  - **GPA (High to Low):** Performance-based ordering.
+  - **Default:** Resetting to original list order.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Technical Stack
+- **Hooks:** useState, useEffect
+- **Patterns:** State Lifting, Derived State
+- **UI:** Conditional Rendering, Loading State Simulation

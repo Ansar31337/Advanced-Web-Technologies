@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# LAB 03: Global State with Context & Form Validation
+## Student Dashboard — Application Architecture & Data Persistence
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+This final laboratory task completes the **Student Dashboard** by introducing global state management via the Context API and implementing a robust data entry system. The project is refactored from a prop-drilling model to a centralized context provider model, ensuring scalability and cleaner component logic.
 
-## Available Scripts
+## Objective
+The primary objective is to implement a global application state using `createContext` and `useContext`, build a complex form with comprehensive field validation, and ensure data persistence using the Browser's **LocalStorage API**. This lab emphasizes architectural patterns and user experience (UX) enhancements.
 
-In the project directory, you can run:
+## Topics Covered
+- **Context API:** Implementing `ThemeContext` and `StudentContext` for global state management.
+- **Provider Pattern:** Encapsulating the application within context providers.
+- **Form Architecture:** Handling complex inputs, inline error validation, and submission logic.
+- **Data Persistence:** Rehydrating and persisting application state via `localStorage`.
 
-### `npm start`
+## Implementation Tasks
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. Global Theme Management
+- Developed a `ThemeContext` to handle Light and Dark modes.
+- Implemented a `ThemeProvider` to wrap the entire application.
+- Added a theme toggle in the header that updates the UI globally via `useContext`.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 2. Student Context & State Refactoring
+- Created a centralized `StudentContext` to manage student data, search queries, and sorting preferences.
+- Refactored `SearchBar`, `SortControls`, and `StudentCard` to consume global state directly, eliminating unnecessary prop drilling.
 
-### `npm test`
+### 3. Validated Registration Form
+- Built an `AddStudentForm` component with fields for Full Name, Student ID, Major, GPA, and Courses.
+- Implemented strict validation rules:
+  - **Full Name/Major:** Non-empty string requirements.
+  - **Student ID:** Must be numeric and unique within the current dataset.
+  - **GPA:** Validated range between 0.0 and 4.0.
+- Integrated inline error messages to provide real-time feedback to users.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 4. Notification & Feedback System
+- Implemented a success notification that triggers upon valid form submission.
+- Utilized `useEffect` to ensure notifications automatically dismiss after 3 seconds.
 
-### `npm run build`
+### 5. Persistent State & Management
+- Integrated `localStorage` to ensure the student list and theme settings persist across page refreshes.
+- Added a **Remove Student** feature, allowing for dataset management directly from the UI.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Technical Stack
+- **Context Management:** createContext, useContext
+- **Persistence:** LocalStorage API
+- **Feedback:** Asynchronous Notifications (setTimeout)
+- **Validation:** Manual State-Based Validation
