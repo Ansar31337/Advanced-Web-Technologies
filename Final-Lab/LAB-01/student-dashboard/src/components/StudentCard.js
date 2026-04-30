@@ -20,6 +20,7 @@ const StudentCard = ({ name, id, avatar, gpa, major, courses }) => {
         <StatBadge label="GPA" value={gpa} />
         <StatBadge label="Credits" value={90} />
       </div>
+
     </div>
   );
 };
