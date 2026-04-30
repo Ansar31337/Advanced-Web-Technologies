@@ -1,0 +1,130 @@
+:root {
+  --primary-color: #2563eb;
+  --bg-color: #f8fafc;
+  --card-bg: #ffffff;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --spacing-unit: 1rem;
+  --border-radius: 0.5rem;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-container {
+  padding: var(--spacing-unit);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.student-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--spacing-unit);
+  margin-top: 2rem;
+}
+
+.dashboard-header {
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.dashboard-header p {
+  color: var(--text-muted);
+  margin: 0.5rem 0 1rem 0;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.student-card {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-unit);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.student-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  background: #e2e8f0;
+}
+
+.student-name {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.student-info {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.course-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.course-tag {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: white;
+}
+
+.stat-badges {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 0.75rem;
+  width: 100%;
+}
+
+.stat-badge {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-label {
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.025em;
+}
+
+.stat-value {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
