@@ -62,7 +62,6 @@ function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [sortType, setSortType] = useState('default');
 
-  // Task 1: Simulated API Fetch
   useEffect(() => {
     const timer = setTimeout(() => {
       setStudents(initialStudents);
@@ -87,10 +86,9 @@ function App() {
     .sort((a, b) => {
       if (sortType === 'name') return a.name.localeCompare(b.name);
       if (sortType === 'gpa') return b.gpa - a.gpa;
-      return 0; // default
+      return 0;
     });
 
-  // Task 4: Dynamic Document Title
   useEffect(() => {
     const filteredCount = filteredAndSortedStudents.length;
     document.title = `Dashboard — ${filteredCount} Students`;

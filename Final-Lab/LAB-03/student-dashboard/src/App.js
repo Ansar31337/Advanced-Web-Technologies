@@ -21,7 +21,6 @@ function App() {
       return 0;
     });
 
-  // Task 4: Dynamic Document Title
   useEffect(() => {
     document.title = `Dashboard — ${filteredAndSortedStudents.length} Students`;
   }, [filteredAndSortedStudents.length]);
