@@ -50,10 +50,19 @@ body {
   gap: 1rem;
 }
 
-.nav-link {
-  text-decoration: none;
+.nav-link-btn {
+  background: none;
+  border: none;
+  padding: 0;
   color: var(--text-main);
   font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.nav-link-btn:hover {
+  color: var(--primary-color);
 }
 
 .student-card {
