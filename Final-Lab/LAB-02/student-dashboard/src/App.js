@@ -9,7 +9,7 @@ const initialStudents = [
   {
     name: 'Ansar',
     id: 'UG02-43-18-001',
-    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Ansar',
+    avatar: 'https://github.com/Ansar31337.png',
     gpa: 3.92,
     major: 'Computer Science',
     courses: [
