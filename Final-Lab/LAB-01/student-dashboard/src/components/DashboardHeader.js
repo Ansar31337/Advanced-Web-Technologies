@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const DashboardHeader = ({ title, tagline }) => {
   return (
@@ -12,6 +13,11 @@ const DashboardHeader = ({ title, tagline }) => {
       </nav>
     </header>
   );
+};
+
+DashboardHeader.propTypes = {
+  title: PropTypes.string.isRequired,
+  tagline: PropTypes.string.isRequired,
 };
 
 export default DashboardHeader;

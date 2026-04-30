@@ -34,18 +34,16 @@ export const StudentProvider = ({ children }) => {
     const saved = localStorage.getItem('students');
     return saved ? JSON.parse(saved) : initialData;
   });
-  const [loading, setLoading] = useState(!localStorage.getItem('students'));
+  const [loading, setLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
   const [sortType, setSortType] = useState('default');
 
   useEffect(() => {
-    if (loading) {
-      const timer = setTimeout(() => {
-        setLoading(false);
-      }, 1500);
-      return () => clearTimeout(timer);
-    }
-  }, [loading]);
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     localStorage.setItem('students', JSON.stringify(students));

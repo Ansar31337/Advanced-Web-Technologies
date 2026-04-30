@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const SortControls = ({ sortType, setSortType }) => {
   return (
@@ -23,6 +24,11 @@ const SortControls = ({ sortType, setSortType }) => {
       </button>
     </div>
   );
+};
+
+SortControls.propTypes = {
+  sortType: PropTypes.string.isRequired,
+  setSortType: PropTypes.func.isRequired,
 };
 
 export default SortControls;

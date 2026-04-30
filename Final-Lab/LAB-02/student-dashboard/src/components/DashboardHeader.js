@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const DashboardHeader = ({ title, tagline, favoriteCount }) => {
   return (
@@ -17,6 +18,12 @@ const DashboardHeader = ({ title, tagline, favoriteCount }) => {
       </div>
     </header>
   );
+};
+
+DashboardHeader.propTypes = {
+  title: PropTypes.string.isRequired,
+  tagline: PropTypes.string.isRequired,
+  favoriteCount: PropTypes.number.isRequired,
 };
 
 export default DashboardHeader;

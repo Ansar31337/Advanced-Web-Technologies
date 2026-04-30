@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import PropTypes from 'prop-types';
 import { ThemeContext } from '../context/ThemeContext';
 import { StudentContext } from '../context/StudentContext';
 
@@ -29,6 +30,11 @@ const DashboardHeader = ({ title, tagline }) => {
       </div>
     </header>
   );
+};
+
+DashboardHeader.propTypes = {
+  title: PropTypes.string.isRequired,
+  tagline: PropTypes.string.isRequired,
 };
 
 export default DashboardHeader;
