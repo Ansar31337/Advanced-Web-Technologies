@@ -7,9 +7,9 @@ import SortControls from './components/SortControls';
 
 const initialStudents = [
   {
-    name: 'Ansar',
+    name: 'Bruce Wayne',
     id: 'UG02-43-18-001',
-    avatar: 'https://github.com/Ansar31337.png',
+    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Bruce',
     gpa: 3.92,
     major: 'Computer Science',
     courses: [
