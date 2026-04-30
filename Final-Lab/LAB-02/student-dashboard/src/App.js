@@ -71,12 +71,6 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  // Task 4: Dynamic Document Title
-  useEffect(() => {
-    const filteredCount = filteredAndSortedStudents.length;
-    document.title = `Dashboard — ${filteredCount} Students`;
-  }, [searchQuery, students, sortType]);
-
   const toggleFavorite = (id) => {
     setStudents(prev => prev.map(s => 
       s.id === id ? { ...s, isFavorite: !s.isFavorite } : s
@@ -95,6 +89,12 @@ function App() {
       if (sortType === 'gpa') return b.gpa - a.gpa;
       return 0; // default
     });
+
+  // Task 4: Dynamic Document Title
+  useEffect(() => {
+    const filteredCount = filteredAndSortedStudents.length;
+    document.title = `Dashboard — ${filteredCount} Students`;
+  }, [filteredAndSortedStudents.length]);
 
   return (
     <div className="dashboard-container">
